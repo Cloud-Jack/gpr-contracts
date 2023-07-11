@@ -1,0 +1,25 @@
+{
+  "name": "gpr-contracts",
+  "version": "1.0.0",
+  "description": "GPR service smartcontracts",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "deploy:local": "truffle migrate --network loc_development",
+    "deploy:testnet": "truffle migrate --network sepolia",
+    "deploy:mainnet": "truffle migrate --network mainnet"
+  },
+  "keywords": ["gpr", "registry", "global", "property", "solidity"],
+  "author": "Yevhen Tumakov",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "bignumber.js": "^9.1.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.1",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^10.0.0",
+    "solc": "^0.8.17",
+    "web3": "^1.7.5"
+  }
+}
